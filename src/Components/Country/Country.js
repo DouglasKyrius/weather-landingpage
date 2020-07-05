@@ -40,9 +40,9 @@ const Country = ({defaultCities, tempSymbol, ...props}) => {
               <p>{props.city.weather[0].main.toUpperCase()}</p>
             </div>
             {props.city.main.temp >= 16 ?
-              <img src={warm} alt="Warm image" id="country-img" />
+              <img src={warm} alt="Warm img" class="country-img" />
               :
-              <img src={cold} alt="Cold image" id="country-img" />
+              <img src={cold} alt="Cold img" class="country-img" />
             }
             <div className="country">
               <div>
@@ -76,9 +76,9 @@ const Country = ({defaultCities, tempSymbol, ...props}) => {
                 <p>{defaultCities.weather[0].main.toUpperCase()}</p>
               </div>
               {defaultCities.main.temp >= 16 ?
-                <img src={warm} alt="Warm image" id="country-img" />
+                <img src={warm} alt="Warm img" class="country-img" />
                 :
-                <img src={cold} alt="Cold image" id="country-img" />
+                <img src={cold} alt="Cold img" class="country-img" />
               }
               <div className="country">
                 <div>
