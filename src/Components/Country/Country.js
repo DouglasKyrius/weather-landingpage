@@ -23,7 +23,6 @@ const Country = ({defaultCities, tempSymbol, ...props}) => {
       : currentTemp = (defaultCities.main.temp * 9/5) + 32;
   }
   
-
   return ( 
     <section>
       { props.city.main ?
